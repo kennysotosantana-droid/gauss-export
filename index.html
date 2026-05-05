@@ -63,21 +63,21 @@ a{text-decoration:none;color:inherit}
 @media(max-width:600px){.modal-box{padding:2rem 1.2rem}}
 
 /* ── NAV ── */
-#nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:22px 5vw 0;transition:background .4s,box-shadow .4s,backdrop-filter .4s,padding .35s}
+#nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:18px 5vw 0;transition:background .4s,box-shadow .4s,backdrop-filter .4s,padding .35s}
 #nav.s{background:rgba(255,255,255,.97);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--bd)}
-.nav-in{display:flex;align-items:center;justify-content:space-between;height:148px;max-width:var(--max);margin:0 auto;gap:1.2rem}
+.nav-in{display:grid;grid-template-columns:minmax(180px,260px) minmax(0,1fr);align-items:center;height:136px;max-width:var(--max);margin:0 auto;gap:2rem;border-bottom:1px solid rgba(255,255,255,.16)}
 #nav.s{padding-top:8px}
-#nav.s .nav-in{height:98px}
-.site-logo{display:inline-flex;align-items:center;justify-content:center;background:transparent;line-height:0;flex:0 0 auto}
-.site-logo img{height:128px;width:auto;display:block;object-fit:contain;background:transparent}
+#nav.s .nav-in{height:88px;border-bottom:0}
+.site-logo{display:inline-flex;align-items:center;justify-content:flex-start;background:transparent;line-height:0;justify-self:start;flex:0 0 auto}
+.site-logo img{height:138px;width:auto;display:block;object-fit:contain;background:transparent}
 .site-logo .logo-light{display:block}
 .site-logo .logo-color{display:none}
 .site-logo .logo-black{display:none}
-#nav.s .site-logo img{height:82px}
+#nav.s .site-logo img{height:86px}
 #nav.s .site-logo .logo-light{display:none}
 #nav.s .site-logo .logo-color{display:block}
 @media (prefers-contrast: more){#nav.s .site-logo .logo-color{display:none}#nav.s .site-logo .logo-black{display:block}}
-.nav-right{display:flex;align-items:center;gap:1.4rem}
+.nav-right{display:flex;align-items:center;justify-content:flex-end;justify-self:end;gap:1.4rem}
 .nl{display:flex;align-items:center;gap:2.2rem;list-style:none}
 .nl a{font-size:.82rem;font-weight:500;color:rgba(255,255,255,.9);transition:color .2s}
 #nav.s .nl a{color:var(--tm)}
@@ -99,7 +99,7 @@ a{text-decoration:none;color:inherit}
 #nav.s .lang{border-color:var(--bd);background:#fff}
 #nav.s .lang button{color:var(--tm)}
 #nav.s .lang button.active{background:var(--g);color:#fff}
-@media(max-width:820px){#nav{padding:14px 5vw 0}.nl{display:none}.hbg{display:flex}.nav-in{height:108px}.nav-right{gap:.55rem}.lang{display:flex}.lang button{font-size:.62rem;padding:.3rem .42rem}.site-logo img{height:86px}#nav.s .nav-in{height:78px}#nav.s .site-logo img{height:58px}}
+@media(max-width:820px){#nav{padding:12px 5vw 0}.nl{display:none}.hbg{display:flex}.nav-in{grid-template-columns:minmax(120px,1fr) auto;height:104px;gap:1rem}.nav-right{gap:.55rem}.lang{display:flex}.lang button{font-size:.62rem;padding:.3rem .42rem}.site-logo img{height:88px}#nav.s .nav-in{height:74px}#nav.s .site-logo img{height:60px}}
 
 /* ── HERO ── */
 #hero{min-height:100vh;background-image:url('https://cdn.marblism.com/ojNZOGy2ePX.webp');background-size:cover;background-position:center center;background-repeat:no-repeat;background-attachment:scroll;display:flex;align-items:center;justify-content:center;position:relative;text-align:center}
@@ -235,6 +235,8 @@ footer{background:#0F1F14;padding:3rem 5vw 2rem}
 .fi{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:2rem}
 @media(max-width:860px){.fi{grid-template-columns:1fr 1fr;gap:2rem}}
 @media(max-width:540px){.fi{grid-template-columns:1fr}}
+.footer-brand-logo{display:inline-flex;align-items:center;background:transparent;margin-bottom:1.4rem}
+.footer-brand-logo img{height:118px;width:auto;display:block;object-fit:contain;background:transparent}
 .ftag{font-size:.82rem;line-height:1.75;color:rgba(255,255,255,.38)}
 .fct{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:1.2rem}
 .flinks{list-style:none;display:flex;flex-direction:column;gap:.7rem}
@@ -638,6 +640,7 @@ footer{background:#0F1F14;padding:3rem 5vw 2rem}
 <footer>
   <div class="fi">
     <div class="fb">
+      <span class="footer-brand-logo"><img src="assets/logo/gauss-logo-white-transparent.png" alt="Gauss Export Dominicana logo"></span>
       <p class="ftag" data-i18n="footer_text">Direct-origin export of cacao, coffee, mango and avocados from the Dominican Republic. Quality, transparency and partnership since 1883.</p>
     </div>
     <div>
