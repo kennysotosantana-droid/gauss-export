@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 160" role="img" aria-labelledby="title desc">
+  <title id="title">Gauss Export</title>
+  <desc id="desc">Gauss Export vector wordmark</desc>
+  <defs>
+    <style>
+      .navy{fill:#061a33}
+      .green{fill:#1b7a3e}
+      .gold{fill:none;stroke:#c7a452;stroke-width:5;stroke-linecap:round}
+      .line{fill:none;stroke:#1b7a3e;stroke-width:5;stroke-linecap:round}
+      .small{font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;letter-spacing:4px}
+      .word{font-family:Arial,Helvetica,sans-serif;font-size:54px;font-weight:800;letter-spacing:7px}
+      .sub{font-family:Arial,Helvetica,sans-serif;font-size:12px;font-weight:700;letter-spacing:2.5px}
+    </style>
+  </defs>
+  <g transform="translate(26 18)">
+    <path class="navy" d="M72 7c24 0 45 12 58 30l-20 12c-9-12-23-19-39-19-29 0-51 22-51 51s22 51 51 51c22 0 39-11 47-28H76V82h70c1 6 1 12 0 18-8 34-38 55-74 55C31 155 0 124 0 82S31 7 72 7Z"/>
+    <circle class="gold" cx="72" cy="80" r="44"/>
+    <path class="gold" d="M29 80h87M72 36c-14 15-21 29-21 44s7 29 21 44M72 36c14 15 21 29 21 44 0 9-2 18-7 27"/>
+    <path class="green" d="M105 102c24-18 51-17 68-11-8 22-30 43-65 43-9 0-18-2-26-5 5-9 12-18 23-27Z"/>
+    <path class="line" d="M91 124c19-12 39-20 67-29"/>
+  </g>
+  <g transform="translate(196 45)">
+    <text class="word navy" x="0" y="42">GAUSS</text>
+    <path class="line" d="M4 62h174M308 62h70"/>
+    <text class="small green" x="190" y="68">EXPORT</text>
+    <text class="sub navy" opacity=".78" x="2" y="99">DIRECT SOURCING · PREMIUM QUALITY</text>
+  </g>
+</svg>

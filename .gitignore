@@ -1,0 +1,4 @@
+﻿*.backup.html
+index.before-*.html
+index.codex-before-*.html
+index.optimus-*.html
