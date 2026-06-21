@@ -40,6 +40,7 @@
 /* ── RESET ── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
+section[id]{scroll-margin-top:120px}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;background:#fff;color:#1a1a1a;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit}
@@ -219,14 +220,15 @@ a{text-decoration:none;color:inherit}
 .cmeta{font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:#8A7330;margin-bottom:.75rem}
 .ccard h3{font-family:Georgia,serif;font-size:1.7rem;color:var(--td);margin-bottom:.2rem}
 .csub{font-size:.86rem;color:var(--g);font-weight:700;margin-bottom:1.3rem}
-.clist{list-style:none;display:grid;gap:.65rem;margin:0 0 1.4rem}
-.clist li{display:grid;grid-template-columns:150px 1fr;gap:.9rem;font-size:.88rem;color:var(--tm);border-top:1px solid #EDF5F0;padding-top:.65rem}
-.clist strong{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ts)}
+.clist{list-style:none;margin:0 0 1.5rem;border-top:1px solid #E9F2EC}
+.clist li{display:grid;grid-template-columns:160px 1fr;column-gap:1.5rem;align-items:baseline;padding:.8rem 0;border-bottom:1px solid #E9F2EC}
+.clist strong{font-size:.63rem;letter-spacing:.11em;text-transform:uppercase;color:var(--ts);font-weight:700;line-height:1.45}
+.clist li>span{font-size:.95rem;color:var(--td);font-weight:400;line-height:1.55}
 .ctext{font-size:.92rem;color:var(--ts);line-height:1.75}
 .cbtn{display:inline-flex;align-items:center;gap:.45rem;margin-top:1.25rem;padding:.75rem 1.15rem;border-radius:999px;background:var(--g);color:#fff;font-size:.82rem;font-weight:800;box-shadow:0 12px 28px rgba(27,122,62,.18);transition:background .2s,transform .2s}
 .cbtn:hover{background:var(--gm);transform:translateY(-1px)}
 .status-note{display:inline-flex;align-items:center;gap:.45rem;margin-bottom:1rem;padding:.45rem .7rem;border-radius:999px;background:#F8F3E4;color:#755D1A;font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
-@media(max-width:560px){.ccard{padding:1.45rem}.clist li{grid-template-columns:1fr;gap:.2rem}.ccard h3{font-size:1.45rem}}
+@media(max-width:560px){.ccard{padding:1.45rem}.clist li{grid-template-columns:1fr;row-gap:.3rem;padding:.85rem 0}.clist strong{font-size:.6rem}.clist li>span{font-size:.92rem}.ccard h3{font-size:1.45rem}}
 
 #medien{padding:7rem 0;background:#fff}
 .mh{text-align:center;margin-bottom:3.5rem}
