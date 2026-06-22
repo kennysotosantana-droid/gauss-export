@@ -198,6 +198,21 @@ a{text-decoration:none;color:inherit}
 .pb p{font-size:.85rem;line-height:1.7;color:var(--ts)}
 .pf{padding:1rem 1.6rem 1.4rem;display:flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:600;color:var(--g);margin-top:auto}
 
+/* ── KAKAO-VERARBEITUNG (Sanchez / Hispaniola) ── */
+#cacao-processing{padding:6rem 0 7rem;background:linear-gradient(180deg,#F8FBF9,#fff)}
+.procg{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;max-width:1000px;margin:0 auto}
+@media(max-width:760px){.procg{grid-template-columns:1fr;max-width:520px}}
+.procc{position:relative;overflow:hidden;background:#fff;border:1px solid var(--bd);border-radius:16px;padding:2.1rem 1.9rem 1.8rem;transition:border-color .3s,box-shadow .3s,transform .3s}
+.procc:hover{border-color:var(--gm);box-shadow:0 14px 38px rgba(27,122,62,.1);transform:translateY(-4px)}
+.procc::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--g),var(--gl))}
+.proc-badge{font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--g);font-weight:700;display:block;margin-bottom:.7rem}
+.procc h3{font-family:Georgia,serif;font-size:1.3rem;color:var(--td);margin-bottom:.65rem}
+.procc p{font-size:.9rem;line-height:1.75;color:var(--tm)}
+.proc-state{display:inline-block;margin-top:1.15rem;padding:.42rem .85rem;border-radius:999px;font-size:.7rem;font-weight:700;letter-spacing:.03em}
+.procc.now .proc-state{background:var(--gp);color:var(--g)}
+.procc.req .proc-state{background:#F5F1E3;color:#7A6418}
+.proc-note{max-width:820px;margin:2.6rem auto 0;text-align:center;font-size:.92rem;line-height:1.8;color:var(--ts);font-weight:300}
+
 /* ── VORTEILE ── */
 #vorteile{padding:7rem 0;background:#fff}
 .vh{text-align:center;margin-bottom:3.5rem}
@@ -559,8 +574,8 @@ footer{background:linear-gradient(180deg,#102418 0%,#0B1A11 100%);padding:3rem 5
           <p data-i18n="cacao_text">Premium quality for chocolate makers. Fermented, origin-controlled and prepared for direct export.</p>
         </div>
         <div class="pshots">
-          <img src="public/assets/products/cacao/cacao-pods.webp" width="560" height="448" alt="Ripe Trinitario cacao pods, freshly harvested" loading="lazy" decoding="async">
-          <img src="public/assets/products/cacao/cacao-beans.webp" width="560" height="330" alt="Fermented raw cacao beans beside an open cacao pod" loading="lazy" decoding="async">
+          <img src="public/assets/products/cacao/rohkakao-front-sack.webp" width="720" height="720" alt="Gauss Export Rohkakao 70 kg Jutesack" loading="lazy" decoding="async">
+          <img src="public/assets/products/cacao/rohkakao-stacked-sacks.webp" width="720" height="720" alt="Gauss Export Raw Cacao 70 kg burlap sacks" loading="lazy" decoding="async">
         </div>
         <div class="pf"><svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span data-i18n="direct_available">Direct export available</span></div>
       </div>
@@ -587,12 +602,38 @@ footer{background:linear-gradient(180deg,#102418 0%,#0B1A11 100%);padding:3rem 5
           <p data-i18n="coffee_text">Selected Arabica from Dominican growing regions, built for roasters who need a reliable origin partner.</p>
         </div>
         <div class="pshots">
-          <img src="public/assets/products/green-coffee/coffee-bowl.webp" width="560" height="560" alt="Bowl of unroasted green Arabica coffee beans" loading="lazy" decoding="async">
-          <img src="public/assets/products/green-coffee/coffee-beans.webp" width="560" height="466" alt="Loose green Arabica coffee beans on a light surface" loading="lazy" decoding="async">
+          <img src="public/assets/products/green-coffee/rohkaffee-front-sack.webp" width="720" height="720" alt="Gauss Export Raw Green Coffee 60 kg jute sack" loading="lazy" decoding="async">
+          <img src="public/assets/products/green-coffee/rohkaffee-stacked-sacks.webp" width="720" height="720" alt="Gauss Export Raw Green Coffee 60 kg burlap sacks" loading="lazy" decoding="async">
         </div>
         <div class="pf"><svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg> <span data-i18n="direct_available">Direct export available</span></div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- KAKAO-VERARBEITUNG: SANCHEZ / HISPANIOLA -->
+<section id="cacao-processing">
+  <div class="wrap">
+    <div class="ch rv">
+      <span class="tag" data-i18n="proc_tag">Cacao Processing</span>
+      <h2 class="h2" data-i18n="proc_title">S&aacute;nchez &amp; Hispaniola &mdash; <em>processing, not variety.</em></h2>
+      <p class="btxt" data-i18n="proc_intro">In the Dominican Republic, cacao is traditionally distinguished by its post-harvest processing. S&aacute;nchez and Hispaniola are not botanical cacao varieties &mdash; they describe two different processing profiles of the same Dominican origin.</p>
+    </div>
+    <div class="procg">
+      <article class="procc now rv">
+        <span class="proc-badge" data-i18n="proc_sanchez_badge">S&aacute;nchez Processing</span>
+        <h3 data-i18n="proc_sanchez_title">Unfermented &amp; sun-dried</h3>
+        <p data-i18n="proc_sanchez_text">S&aacute;nchez stands for unfermented, sun-dried cacao: bold, original and direct in profile. Our cacao nibs are currently produced exactly this way in our own facility in the Dominican Republic &mdash; ideal for further processing.</p>
+        <span class="proc-state" data-i18n="proc_sanchez_state">In current own production</span>
+      </article>
+      <article class="procc req rv d1">
+        <span class="proc-badge" data-i18n="proc_hispaniola_badge">Hispaniola Processing</span>
+        <h3 data-i18n="proc_hispaniola_title">Fermented &amp; dried</h3>
+        <p data-i18n="proc_hispaniola_text">Hispaniola stands for fermented and then dried cacao, with a rounder, more complex aroma. Available on request &mdash; ideal for premium and craft applications.</p>
+        <span class="proc-state" data-i18n="proc_hispaniola_state">Available on request</span>
+      </article>
+    </div>
+    <p class="proc-note rv" data-i18n="proc_note">Both profiles can come from the same bean, origin and variety. The difference lies mainly in post-harvest processing &mdash; not in the plant.</p>
   </div>
 </section>
 
